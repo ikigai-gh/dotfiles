@@ -1,0 +1,32 @@
+[user]
+    email = ikigai@ikigai.fail
+    name = ikigai
+[init]
+    defaultBranch = master
+[core]
+    editor = vim
+    pager = delta
+[diff]
+    tool = vimdiff
+[delta]
+    features = line-numbers decorations
+    line-numbers = true
+[alias]
+    a  = add
+    c = commit
+    cm = commit -m
+    d = diff
+    dc = diff --cached
+    l = log --oneline
+    r = reset --mixed HEAD~1
+    rh = reset --hard HEAD~1
+    rs = restore
+    rst = restore --staged
+    release = !sh -c 'git tag $1 && git push && git push --tags'
+    s = status
+    sc = switch -c
+    st = stash
+    sw = switch
+    stp = stash pop
+[status]
+    short = true

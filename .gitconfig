@@ -30,3 +30,8 @@
     stp = stash pop
 [status]
     short = true
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[mergetool]
+    promt = false

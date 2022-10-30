@@ -8,6 +8,8 @@
     pager = delta
 [diff]
     tool = vimdiff
+[difftool]
+    prompt = false
 [delta]
     features = line-numbers decorations
     line-numbers = true

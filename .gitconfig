@@ -20,6 +20,8 @@
     d = diff
     dc = diff --cached
     l = log --oneline
+    p = push
+    pf = push --force-with-lease
     r = reset --mixed HEAD~1
     rh = reset --hard HEAD~1
     rs = restore

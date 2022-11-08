@@ -26,10 +26,10 @@
     rst = restore --staged
     release = !sh -c 'git tag $1 && git push && git push --tags'
     s = status
-    sc = switch -c
     st = stash
-    sw = switch
     stp = stash pop
+    sw = switch
+    swc = switch -c
 [status]
     short = true
 [merge]

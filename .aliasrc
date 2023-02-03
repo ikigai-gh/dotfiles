@@ -4,6 +4,7 @@ alias z="zathura"
 alias ss="ss -tlnp"
 alias news="newsboat"
 alias sc="hunspell -d en_US"
+alias vps="ssh ikigai.fail"
 
 # pacman
 alias ps="sudo pacman -S"

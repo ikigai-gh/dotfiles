@@ -4,3 +4,9 @@ alias z="zathura"
 alias ss="ss -tlnp"
 alias news="newsboat"
 alias sc="hunspell -d en_US"
+
+# pacman
+alias ps="sudo pacman -S"
+alias pss="pacman -Ss"
+alias pql="pacman -Ql"
+alias psyu="sudo pacman -Syu"

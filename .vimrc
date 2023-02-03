@@ -21,9 +21,28 @@ set tabstop=4
 
 color slate
 syntax on
-filetype on
+filetype off
 filetype plugin on
+set rtp+=~/.vim/bundle/Vundle.vim
+" Plugins {{{
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'          "A plugin manager
+Plugin 'scrooloose/nerdtree'        "A file tree
+Plugin 'Valloric/YouCompleteMe'     "An autocomplete engine
+Plugin 'puremourning/vimspector'    "A debugging tool
+
+call vundle#end()
+"" }}}
 
 " Commands {{{
 autocmd FileType Makefile setlocal expandtab=no
+"" }}}
+
+let mapleader = ' '
+" Shortcuts {{{
+nnoremap <leader>t  :NERDTree<CR>
+nnoremap <leader>gt :YcmCompleter GoTo<CR>
+nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
+
 "" }}}

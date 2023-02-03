@@ -1,0 +1,6 @@
+alias e="$EDITOR"
+alias g="git"
+alias z="zathura"
+alias ss="ss -tlnp"
+alias news="newsboat"
+alias sc="hunspell -d en_US"

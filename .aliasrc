@@ -7,7 +7,8 @@ alias sc="hunspell -d en_US"
 alias vps="ssh $VPS_SSH_HOST"
 
 # pacman
+alias pqs="pacman -Qs"
+alias pql="pacman -Ql"
 alias ps="sudo pacman -S"
 alias pss="pacman -Ss"
-alias pql="pacman -Ql"
 alias psyu="sudo pacman -Syu"

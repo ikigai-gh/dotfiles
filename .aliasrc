@@ -9,6 +9,6 @@ alias vps="ssh $VPS_SSH_HOST"
 # pacman
 alias pqs="pacman -Qs"
 alias pql="pacman -Ql"
-alias ps="sudo pacman -S"
+alias pcs="sudo pacman -S"
 alias pss="pacman -Ss"
 alias psyu="sudo pacman -Syu"

@@ -1,0 +1,4 @@
+# Remove torrent files every day at 00:00
+0 0 * * * rm ~/dl/*.torrent
+# Purge a pacman cache on Saturday
+0 0 * * 6 paccache -r

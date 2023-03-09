@@ -5,6 +5,7 @@ alias ss="ss -tlnp"
 alias news="newsboat"
 alias sc="hunspell -d en_US"
 alias vps="ssh $VPS_SSH_HOST"
+alias uwu="uwufetch"
 
 # pacman
 alias pqs="pacman -Qs"

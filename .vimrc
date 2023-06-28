@@ -19,30 +19,58 @@ set smartcase
 set tabstop=4
 " }}}
 
-color slate
 syntax on
 filetype off
 filetype plugin on
-set rtp+=~/.vim/bundle/Vundle.vim
-" Plugins {{{
-call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'          "A plugin manager
-Plugin 'scrooloose/nerdtree'        "A file tree
-Plugin 'Valloric/YouCompleteMe'     "An autocomplete engine
-Plugin 'puremourning/vimspector'    "A debugging tool
-
-call vundle#end()
-"" }}}
-
+set spell
+set splitbelow
 " Commands {{{
 autocmd FileType Makefile setlocal expandtab=no
+" autocmd BufWritePost *.go :make
 "" }}}
 
-let mapleader = ' '
-" Shortcuts {{{
-nnoremap <leader>t  :NERDTree<CR>
-nnoremap <leader>gt :YcmCompleter GoTo<CR>
-nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
+"" Plugin list {{{
 
+call plug#begin(expand('~/.vim/plugged'))
+"" Bottom prompt
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+"" File tree
+Plug 'preservim/nerdtree'
+
+"" Monochrome theme
+Plug 'huyvohcmc/atlas.vim'
+
+"" Language Server Protocol
+Plug 'prabirshrestha/vim-lsp'
+"" Default settings for LSP
+Plug 'mattn/vim-lsp-settings'
+
+"" Autocompletion for LSP
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+
+"" Debug server
+Plug 'puremourning/vimspector'
+"" Snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+call plug#end()
+
+"" }}}
+
+colorscheme atlas
+"" Plugin setup {{{
+let g:airline_theme='minimalist'
+
+"" }}}
+
+" Shortcuts {{{
+map <F5> :make<CR>
+let mapleader = ' '
+nnoremap <leader>t :NERDTree<CR>
+nnoremap <leader>f :LspReferences<CR>
+nnoremap <leader>d :LspDefinition<CR>
+nnoremap <leader>/ :LspDocumentSymbol<CR>
 "" }}}

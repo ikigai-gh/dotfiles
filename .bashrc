@@ -41,3 +41,6 @@ alias pcs="sudo pacman -S"
 alias pss="pacman -Ss"
 alias psyu="sudo pacman -Syu"
 
+# Use bash-completion, if available
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion

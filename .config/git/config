@@ -1,16 +1,11 @@
 [user]
     email = ikigai@ikigai.fail
     name = Vladislav Slepov
-    signingkey = D6692F84540A4368
 [init]
     defaultBranch = master
 [core]
     editor = vim
     pager = delta
-[commit]
-    gpgsign = true
-[tag]
-    gpgsign = true
 [diff]
     tool = vimdiff
 [difftool]

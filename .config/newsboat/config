@@ -1,0 +1,7 @@
+auto-reload yes
+browser link_handler.sh
+
+# shortcuts
+bind-key j down
+bind-key k up
+bind-key G end

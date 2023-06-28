@@ -1,0 +1,3 @@
+cmd open ${{ xdg-open "$f" }}
+map <enter> open $f
+map d delete
